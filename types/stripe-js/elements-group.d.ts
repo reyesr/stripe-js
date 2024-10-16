@@ -670,6 +670,11 @@ interface BaseStripeElementsOptions {
    * Display saved PaymentMethods and Customer information.
    */
   customerSessionClientSecret?: string;
+
+  /**
+   * Allows PaymentMethods to be created from the Elements instance using stripe.createPaymentMethod.
+   */
+  paymentMethodCreation?: 'manual';
 }
 
 export interface StripeElementsOptionsClientSecret
